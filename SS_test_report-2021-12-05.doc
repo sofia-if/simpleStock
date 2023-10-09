@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>testreport Plan1</title>
+<link type="text/css" rel="stylesheet" href="http://127.0.0.1/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width=231 height=56 src="http://127.0.0.1/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Informe de Ejecución del Plan de Pruebas</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Proyecto de Pruebas: SimpleStock<br/>Plan de Pruebas: Plan1</p></div>
+<div class="summary"><p id="printedby">Imprimido por TestLink el 05/12/2021</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Tabla de Contenidos</h1><div class="toc"><p style="padding-left: 10px;"><b><a href="#toc_1_1">1.1.Agregar Producto</a></b></p>
+<p style="padding-left: 30px;"><a href="#toc_tc21">SS-1: agregar nuevo producto</a></p><p style="padding-left: 30px;"><a href="#toc_tc27">SS-2: Guardar sin completar un campo obligatorio</a></p><p style="padding-left: 30px;"><a href="#toc_tc33">SS-3: Guardar dos productos con un mismo código</a></p><p style="padding-left: 30px;"><a href="#toc_tc42">SS-4: Ingresar texto en el campo stock</a></p><p style="padding-left: 30px;"><a href="#toc_tc44">SS-5: Ingresar 3 decimales en el campo precio</a></p><p style="padding-left: 10px;"><b><a href="#toc_1_2">1.2.Consultar inventario</a></b></p>
+<p style="padding-left: 30px;"><a href="#toc_tc46">SS-6: Introducir dos letras en el campo &quot;código o nombre del producto” para filtrar un producto existente</a></p><p style="padding-left: 30px;"><a href="#toc_tc48">SS-7: Filtrar productos introduciendo una categoría existente</a></p><p style="padding-left: 30px;"><a href="#toc_tc50">SS-8: Verificar navegación con por el inventario presionando los botones “&lt;Prev” and “Next&gt;”.</a></p><p style="padding-left: 30px;"><a href="#toc_tc52">SS-9: Verificar que al filtrar no supere la cantidad de 15 productos mostrados por página.</a></p><p style="padding-left: 30px;"><a href="#toc_tc54">SS-10: Ver información completa del producto al seleccionarlo</a></p></div><h1 class="doclevel" >Proyecto de Pruebas: SimpleStock</h1>
+<div class="txtlevel"><p>Gestion de stock de inventarios</p></div>
+ <br/><p></p><a name='toc_1_1'></a>
+<h1 class='doclevel'>1.1.Suite de Pruebas : Agregar Producto</h1>
+<div><p>Suit de prueba relacionada a agregar o dar de alta un nuevo producto</p>
+</div><a name="toc_tc21"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba SS-1: agregar nuevo producto&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El usuario debe haber iniciado sesion</p>
+
+<p>El usuario debe tener permiso para agregar un nuevo producto</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Ingresar al sistema web Simple Stock (Inventario Simple)</p>
+</td><td><p>Mostrar opciones para gestionar inventario</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Dentro de la pantalla principal, hacer clic en el bot&oacute;n &quot;agregar nuevo producto&quot;</p>
+</td><td><p>Mostrar una ventana de &ldquo;Agregar nuevo producto&rdquo; debe abrirse en un popup</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Completar los campos obligatorios, C&oacute;digo, Nombre, Categor&iacute;a, Precio, Stock.</p>
+</td><td><p>Debe pemitir completar todos los campos y en caso de saltear alguno se deber&aacute; mostrar un mensaje de error<br />
+&quot;Please fill out this field.&quot;</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">4</td><td><p>hacer clic en el bot&oacute;n &quot;Guardar datos&quot;</p>
+</td><td><p>Debe salir un mensaje de &eacute;xito se debe mostrar en la pantalla &quot;&iexcl;Bien hecho! El producto ha sido ingresado satisfactoriamente.&quot; Y los datos deben limpiarse de la pantalla.</p>
+
+<p>El producto agregado deber&aacute; mostrarse en el cuadro principal de consultar inventario con toda su informaci&oacute;n.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">Nuevo Producto:  Agregar Nuevo Producto [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0.0</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Pasado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>5.00</b></td></tr>
+</table>
+</div>
+<a name="toc_tc27"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba SS-2: Guardar sin completar un campo obligatorio&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El usuario debe haber iniciado sesi&oacute;n</p>
+
+<p>El usuario debe tener permiso para agregar un nuevo producto</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Ingresar al sistema web Simple Stock (Inventario Simple)</p>
+</td><td><p>Mostrar opciones para gestionar inventario</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Dentro de la pantalla principal, hacer clic en el bot&oacute;n &quot;agregar nuevo producto&quot;</p>
+</td><td><p>Mostrar una ventana de &ldquo;Agregar nuevo producto&rdquo; debe abrirse en un popup</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Completartodos los campos obligatorios, C&oacute;digo, Nombre, Categor&iacute;a, Precio, excepto Stock</p>
+</td><td><p>Debe permitir completar todos los campos y en caso de saltear alguno debe advertirle al usuario mediante un mensaje</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">4</td><td><p>hacer clic en el bot&oacute;n &quot;Guardar datos&quot;</p>
+</td><td><p>Se deber&aacute; mostrar un mensaje de error &quot;Please fill out this field.&quot;</p>
+
+<p>No permitira guardar el prodcuto hasta completar todos los campos</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">Nuevo Producto:  Agregar Nuevo Producto [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0.0</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Pasado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<a name="toc_tc33"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba SS-3: Guardar dos productos con un mismo código&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El usuario debe haber iniciado sesi&oacute;n</p>
+
+<p>El usuario debe tener permiso para agregar un nuevo producto</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Ingresar al sistema web Simple Stock (Inventario Simple)</p>
+</td><td><p>Mostrar opciones para gestionar inventario</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Dentro de la pantalla principal, hacer clic en el bot&oacute;n &quot;agregar nuevo producto&quot;</p>
+</td><td><p>Mostrar una ventana de &ldquo;Agregar nuevo producto&rdquo; debe abrirse en un popup</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Completar todos los campos obligatorios, C&oacute;digo, Nombre, Categor&iacute;a, Precio, Stock</p>
+</td><td><p>Debe permitir cargar todos los campos, y en caso de saltearse alguno, debe notificar mediante un mensaje de alerta</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">4</td><td><p>Hacer clic en el bot&oacute;n &quot;Guardar datos&quot;</p>
+</td><td><p>mensaje de &eacute;xito se debe mostrar en la pantalla &quot;&iexcl;Bien hecho! El producto ha sido ingresado satisfactoriamente.&quot;</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">5</td><td><p>Hacer clic nuevamente en &quot;agregar nuevo producto&quot;</p>
+</td><td><p>Mostrar una ventana de &ldquo;Agregar nuevo producto&rdquo; debe abrirse en un popup</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">6</td><td><p>Completar todos los campos obligatorios, Nombre, Categor&iacute;a, Precio, Stock. El Campo C&oacute;digo ingresar el mismo que el ingresado en el ultimo producto</p>
+</td><td><p>Debe permitir cargar todos los campos, u en caso de saltarse alguno, debe notificar mediante un mensaje de alerta</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">7</td><td></td><td></td><td></td><td>Pasado</td></tr><tr><td width="5">8</td><td><p>Hacer clic en el bot&oacute;n &quot;Guardar datos&quot;</p>
+</td><td><p>Deberia mostrar un mensaje en pantalla &quot;Codido ya exixtente, verificar que el codigo ingresado sea correcto&quot;</p>
+
+<p>El sistema no deberia permitir guardar dos productos con el mismo codigo</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5">10.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">Nuevo Producto:  Agregar Nuevo Producto [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0.0</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Pasado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<a name="toc_tc42"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba SS-4: Ingresar texto en el campo stock&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El usuario debe haber iniciado sesi&oacute;n</p>
+
+<p>El usuario debe tener permiso para agregar un nuevo producto</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Ingresar al sistema web Simple Stock (Inventario Simple)</p>
+</td><td><p>Mostrar opciones para gestionar inventario</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Dentro de la pantalla principal, hacer clic en el bot&oacute;n &quot;agregar nuevo producto&quot;</p>
+</td><td><p>Mostrar una ventana de &ldquo;Agregar nuevo producto&rdquo; debe abrirse en un popup</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Completar los campos obligatorios: C&oacute;digo, Nombre, Categor&iacute;a, Precio. En el campo de Stock ingresar texto</p>
+</td><td><p>El sistema no deberia permitir el ingreso de texto en este campo</p>
+</td><td><permite ingresar texto pero no guardarlo, al guardar sale un mensaje de alerta diciendo "ajuste al formato asignado"</td><td>Fallado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">Nuevo Producto:  Agregar Nuevo Producto [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0.0</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Fallado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<a name="toc_tc44"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba SS-5: Ingresar 3 decimales en el campo precio&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El usuario debe haber iniciado sesi&oacute;n</p>
+
+<p>El usuario debe tener permiso para agregar un nuevo producto</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Ingresar al sistema web Simple Stock (Inventario Simple)</p>
+
+<p>&nbsp;</p>
+</td><td><p>Mostrar opciones para gestionar inventario</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Dentro de la pantalla principal, hacer clic en el bot&oacute;n &quot;agregar nuevo producto&quot;</p>
+
+<p>&nbsp;</p>
+</td><td><p>Mostrar una ventana de &ldquo;Agregar nuevo producto&rdquo; debe abrirse en un popup</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Completar los campos obligatorios: C&oacute;digo, Nombre, Categor&iacute;a, Stock. En el campo Precio ingresar 3 ceros</p>
+
+<p>&nbsp;</p>
+</td><td><p>El sistema no deberia permitir el ingreso de mas de 2 digitos como decimal</p>
+</td><td>El sistema permite ingresar 3 decimales pero al presionar guardar muestra un mensaje de advertencia "Ajustese al formato solicitado: precio con dos decimales"</td><td>Fallado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">Nuevo Producto:  Agregar Nuevo Producto [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0.0</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Fallado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<a name='toc_1_2'></a>
+<h1 class='doclevel'>1.2.Suite de Pruebas : Consultar inventario</h1>
+<div><p>Esta suit de prueba estara relacionada a las consultas de productos a inventario</p>
+</div><a name="toc_tc46"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba SS-6: Introducir dos letras en el campo &quot;código o nombre del producto” para filtrar un producto existente&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El usuario debe haber iniciado sesi&oacute;n</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Ingresar al sistema web Simple Stock (Inventario Simple)</p>
+</td><td><p>Mostrar opciones para gestionar inventario</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Dentro de la pantalla principal, hacer clic en el bot&oacute;n &quot;Consultar Inventario&quot;</p>
+</td><td><p>Mostrar una ventana de &ldquo;Consultar inventario&rdquo;</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Ingresar en el campo &quot;c&oacute;digo o nombre del producto&quot; las letras &quot;pr&quot; y presionar enter</p>
+</td><td><p>El sistema no debe poder realizar un filtrado con menos de 3 caracteres (letra o numeros)</p>
+</td><td></td><td>Fallado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">Consultar inventario:  Consultar un prodcuto del inventario [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0.0</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Fallado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<a name="toc_tc48"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba SS-7: Filtrar productos introduciendo una categoría existente&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El usuario debe haber iniciado sesi&oacute;n</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Ingresar al sistema web Simple Stock (Inventario Simple)</p>
+</td><td><p>Mostrar opciones para gestionar inventario</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Dentro de la pantalla principal, hacer clic en el bot&oacute;n &quot;Consultar Inventario&quot;</p>
+</td><td><p>Mostrar una ventana de &ldquo;Consultar inventario&rdquo;</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Desplegar opciones de categor&iacute;as disponibles.</p>
+</td><td><p>Mostrar una lista desplegable de categor&iacute;as disponibles.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">4</td><td><p>Seleccionar una categor&iacute;a de las disponibles en el campo &quot;seleccionar una categor&iacute;a&quot;</p>
+</td><td><p>El sistema debera poder filtrar productos introduciendo la catergoria seleccionada</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">Consultar inventario:  Consultar un prodcuto del inventario [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0.0</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Pasado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<a name="toc_tc50"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba SS-8: Verificar navegación con por el inventario presionando los botones “&lt;Prev” and “Next&gt;”.&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El usuario debe haber iniciado sesi&oacute;n</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Ingresar al sistema web Simple Stock (Inventario Simple)</p>
+</td><td><p>Mostrar opciones para gestionar inventario</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Dentro de la pantalla principal, hacer clic en el bot&oacute;n &quot;Consultar Inventario&quot;</p>
+</td><td><p>Mostrar una ventana de &ldquo;Consultar inventario&rdquo;</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Presionar el bot&oacute;n &quot;Next&gt;&quot; para navegar hacia la siguiente p&aacute;gina de productos.</p>
+</td><td><p>Mostrar la siguiente p&aacute;gina de productos.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">4</td><td><p>Presionar el bot&oacute;n &quot;&lt;Prev&quot; para navegar hacia la p&aacute;gina anterior de productos.</p>
+</td><td><p>Mostrar la p&aacute;gina anterior de productos.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">Consultar inventario:  Consultar un prodcuto del inventario [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0.0</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Pasado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<a name="toc_tc52"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba SS-9: Verificar que al filtrar no supere la cantidad de 15 productos mostrados por página.&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El usuario debe haber iniciado sesi&oacute;n</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Ingresar al sistema web Simple Stock (Inventario Simple)</p>
+</td><td><p>Mostrar opciones para gestionar inventario</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Dentro de la pantalla principal, hacer clic en el bot&oacute;n &quot;Consultar Inventario&quot;</p>
+</td><td><p>Mostrar una ventana de &ldquo;Consultar inventario&rdquo;</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Desplegar opciones de categor&iacute;as disponibles.</p>
+</td><td><p>Mostrar una lista desplegable de categor&iacute;as disponibles.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">4</td><td><p>Seleccionar una categor&iacute;a de las disponibles en el campo &quot;seleccionar una categor&iacute;a&quot;</p>
+</td><td><p>El sistema realiza el filtrado seg&uacute;n la categor&iacute;a seleccionada con una canitdad de 15 productos por pagina</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">Consultar inventario:  Consultar un prodcuto del inventario [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0.0</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Pasado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<a name="toc_tc54"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Caso de Prueba SS-10: Ver información completa del producto al seleccionarlo&nbsp;<span style="font-size: 80%;">[Versión  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Autor:</span></td><td colspan="5">admin</td></tr>
+<tr><td colspan="6"><span class="label">Precondiciones:</span><br /><p>El usuario debe haber iniciado sesi&oacute;n</p>
+</td></tr><tr><td><span class="label">Nº:</span></td><td><span class="label">Pasos:</span></td><td><span class="label">Resultados Esperados:</span></td><td><span class="label">Notas de la ejecución:</span></td><td><span class="label">Estado de la ejecución:</span></td></tr><tr><td width="5">1</td><td><p>Ingresar al sistema web Simple Stock (Inventario Simple)</p>
+</td><td><p>Mostrar opciones para gestionar inventario</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">2</td><td><p>Dentro de la pantalla principal, hacer clic en el bot&oacute;n &quot;Consultar Inventario&quot;</p>
+</td><td><p>Mostrar una ventana de &ldquo;Consultar inventario&rdquo;</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">3</td><td><p>Desplegar opciones de categor&iacute;as disponibles.</p>
+</td><td><p>Mostrar una lista desplegable de categor&iacute;as disponibles.</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">4</td><td><p>Seleccionar un categoria haciendo clic sobre una de ellas</p>
+</td><td><p>Mostrar productos relacionados a la categoria seleccionada</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="5">5</td><td><p>Seleccionar un prodcuto haciando clic en uno de ellos</p>
+</td><td><p>El sistema debe ser capaz de ver su nombre, codigo, stock disponible, precio de venta</p>
+</td><td></td><td>Pasado</td></tr><tr><td width="20%" valign="top"><span class="label">Tipo de ejecución:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Duración estimada de la ejec. (min):</span></td><td colspan="5"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Prioridad:</span></td><td colspan="5">Alta</td></tr>
+<tr><td colspan="6"></td></tr><tr><td width="20%" valign="top"><span class="label">Requisitos</span><td colspan="5">Consultar inventario:  Consultar un prodcuto del inventario [Versión : 1]<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="5">&nbsp;Ninguno<br/></td></tr>
+<tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Detalles de la ejecución</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Version 1.0.0</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Resultado de la Ejecución:</span></td><td  colspan="5" ><b>Pasado</b></td></tr>
+<tr><td width="20%"><span class="label">Modo de Ejecución:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Duración de le ejecución (min):</span></td><td  colspan="5" ><b>&nbsp;</b></td></tr>
+</table>
+</div>
+<h1 class="doclevel">Métricas de tiempos de ejecución</h1>
+<div>
+<p>Tiempo estimado para ejecutar 10 casos de prueba (min):20</p>
+<p>Tiempo usado para ejecutar 10 casos de prueba (min):5</p>
+</div>
+
+</body>
+</html>
